@@ -1,7 +1,7 @@
 
 import heroImg from '@/asset/heroBackground.png'
 const HeroSection = () => {
-  console.log(heroImg, 'hero')
+  
     return (
        <div
   className="hero min-h-screen"
