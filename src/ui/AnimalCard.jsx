@@ -17,7 +17,7 @@ const AnimalCard = ({ animal }) => {
                     <p>Weight: {animal.weight} Kg</p>
                 </div>
                 <div className="card-actions">
-                    <Link href={`/all-animals/${animal.id}`}><button className="btn btn-primary">More Info</button></Link>
+                    <Link href={`/all-animals/${animal.id}`}><button className="btn btn-primary">Details Info</button></Link>
                 </div>
             </div>
         </div>
