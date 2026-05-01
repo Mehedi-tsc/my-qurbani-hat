@@ -40,7 +40,7 @@
   },
   {
     "id": 4,
-    "name": "Hariana Gorur",
+    "name": "Hariana Goru",
     "type": "Cow",
     "breed": "Hariana",
     "price": 95000,
@@ -48,7 +48,7 @@
     "age": 3,
     "location": "Rajshahi",
     "description": "Good quality Hariana breed cow from Rajshahi. Clean, healthy, and well-maintained. Great value for Qurbani.",
-    "image": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600",
+    "image": "https://encrypted-tbn0.gstatic.com/images",
     "category": "Large Animal"
   },
   {

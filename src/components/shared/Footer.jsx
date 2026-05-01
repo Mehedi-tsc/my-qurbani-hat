@@ -2,7 +2,7 @@ import img from '@/asset/Eid-Al-Adha-Navbar.png'
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <div className='bg-[#474948] pt-15 pb-7 mt-15'>
+        <div className='bg-[#474948] pt-15 pb-7'>
             <div className='w-11/12 lg:max-w-7xl mx-auto'>
                 <div className='flex justify-center mb-10'>
                     <Image
