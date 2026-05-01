@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AnimalCard = ({ animal }) => {
@@ -16,7 +17,7 @@ const AnimalCard = ({ animal }) => {
                     <p>Weight: {animal.weight} Kg</p>
                 </div>
                 <div className="card-actions">
-                    <button className="btn btn-primary">More Info</button>
+                    <Link href={`/all-animals/${animal.id}`}><button className="btn btn-primary">More Info</button></Link>
                 </div>
             </div>
         </div>
