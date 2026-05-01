@@ -17,7 +17,7 @@ const HeroSection = () => {
       <p className="mb-5">
         View all animals with guaranteed hygienic and Shariah-compliant Qurbani service
       </p>
-      <Link href={'/all-animals'}><button className="btn btn-primary rounded-2xl">Explore Now</button></Link>
+      <Link href={'/all-animals'}><button className="btn btn-primary rounded-2xl animate-pulse">Explore Now</button></Link>
     </div>
   </div>
 </div>

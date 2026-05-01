@@ -21,6 +21,7 @@ const DetailsPage = async ({ params }) => {
 
     return (
         <div className="my-5 w-11/12 lg:max-w-7xl mx-auto ">
+            <h2 className="text-center font-bold text-3xl">Details of {name}</h2>
             <div className="card lg:card-side bg-base-100 shadow-sm">
                 <figure>
                     <Image
