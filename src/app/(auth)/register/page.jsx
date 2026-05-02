@@ -4,6 +4,7 @@ import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const RegisterPage = () => {
@@ -31,6 +32,12 @@ const RegisterPage = () => {
             toast.error(error.message)
         }
         router.push('/login')
+    };
+    const HandlesignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+        toast.success('Login Succesful')
     };
     return (
         <div className=" h-screen my-5">
@@ -104,7 +111,7 @@ const RegisterPage = () => {
 
                     </div>
                 </Form>
-                <button className="mt-3 w-full btn btn-outline rounded-full">Sign in with Google</button>
+                <button onClick={HandlesignIn} className="mt-3 w-full btn btn-outline rounded-full"><FaGoogle/> Sign in with Google</button>
                 <p className="text-center mt-2">If you have an account go to <Link href={'/login'} className="font-medium"> Login</Link> page</p>
             </div>
 

@@ -4,14 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
 import navImg from '@/asset/Eid-Al-Adha-Navbar.png'
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 
+import { toast } from "react-toastify";
+
 const Navbar = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathName = usePathname()
   const { data: session } = authClient.useSession()
   const user = session?.user;
+
+  const HandleSignOut =async()=>{
+    await authClient.signOut();
+    toast.success('Logout Succesful');
+    router.push('/login')
+
+  }
   
 
 
@@ -80,7 +90,7 @@ const Navbar = () => {
               <Avatar.Image alt={user?.name} src={user?.image} />
               <Avatar.Fallback>{user.name.slice(0, 2)}</Avatar.Fallback>
             </Avatar>
-            <Button onClick={async()=>await authClient.signOut()}>Logout</Button>
+            <Button onClick={HandleSignOut}>Logout</Button>
           </div> : <div className="hidden items-center gap-4 md:flex">
             <Link href="/login">Login</Link>
             <Link href='/register'><Button>Register</Button></Link>
@@ -117,7 +127,7 @@ const Navbar = () => {
               }
 
               {
-                user?<Button onClick={async()=>await authClient.signOut()}>Logout</Button>:<Link href={'/register'}><Button className="w-full">Register</Button></Link>
+                user?<Button onClick={HandleSignOut}>Logout</Button>:<Link href={'/register'}><Button className="w-full">Register</Button></Link>
               }
             </li>
           </ul>
