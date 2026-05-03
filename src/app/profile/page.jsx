@@ -1,9 +1,14 @@
 import { auth } from '@/lib/auth';
-import UpdateModal from '@/ui/UpdateModal';
+import UpdateModal from '@/ui/Update';
+import { Button } from '@heroui/react';
 
 import { headers } from 'next/headers';
 import Image from 'next/image';
-import React from 'react';
+import Link from 'next/link';
+
+export const metadata = {
+  title: "Qurbani Hat || Profile",
+  };
 
 const ProfilePage = async() => {
 
@@ -28,7 +33,7 @@ const ProfilePage = async() => {
                 </div>
                 <h2 className='text-center mt-5 font-semibold text-2xl'>{name}</h2>
                 <h2 className='text-center my-5'>Email: {email}</h2>
-                <UpdateModal></UpdateModal>
+                <Link className='flex justify-center' href={'/profile/update-profile'}><Button className='bg-blue-600'>Update Profile</Button></Link>
                 
                 
             </div>

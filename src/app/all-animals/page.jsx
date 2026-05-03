@@ -1,6 +1,8 @@
 
 import Sorting from '@/ui/Sorting';
-
+export const metadata = {
+  title: "Qurbani Hat || All-Animals",
+  };
 
 const AllAnimalPage = async () => {
     const res = await fetch('https://my-qurbani-hat.vercel.app/data.json')
