@@ -1,19 +1,19 @@
 ## Project Name: 
 QurbaniHat – Livestock Booking Platform
 
-## Purpose
+## Purpose:
 The goal of this project is to simplify the process of selecting and booking Qurbani animals online, ensuring convenience, transparency, and accessibility for users.
 
-## Live URL
+## Live URL:
 https://my-qurbani-hat.vercel.app
 
-## Key Features
+## Key Features:
 * Authentication System
 * Animal Listings
 * Detailed View Page
 * Booking Functionality
 
-## NPM Packages
+## NPM Packages:
 * Authentication: Better-Auth
 * Database: MongoDB (MongoDB Atlas)
 * UI & Styling:
