@@ -2,7 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
-import { error } from "better-auth/api";
+
 import Link from "next/link";
 import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";

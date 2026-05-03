@@ -41,7 +41,7 @@ const RegisterPage = () => {
         
     };
     return (
-        <div className=" h-screen my-5">
+        <div className=" my-5">
             <div className="bg-gray-200 w-10/12 md:w-6/12 lg:w-4/12 mx-auto shadow-sm rounded-xl p-10">
                 <h2 className="text-center font-bold text-2xl my-3">Register Your Account</h2>
                 <hr className="text-gray-300 my-6" />
