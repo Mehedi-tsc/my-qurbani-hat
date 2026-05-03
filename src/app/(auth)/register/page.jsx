@@ -37,7 +37,7 @@ const RegisterPage = () => {
         const data = await authClient.signIn.social({
             provider: "google",
         });
-        toast.success('Login Succesful')
+        
     };
     return (
         <div className=" h-screen my-5">
